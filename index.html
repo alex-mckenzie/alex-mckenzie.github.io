@@ -7,10 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
--->
 
   <link rel="icon" href="images/icon.png">
 
@@ -98,23 +96,5 @@
   </div>
 
 </div>
-
-
-<script>
-  function touchStartImage(event) {
-    event.currentTarget.classList.add('touching');
-  }
-
-  function touchEndImage(event) {
-    event.currentTarget.classList.remove('touching');
-  }
-
-  var imageLinks = document.getElementsByClassName("image-link");
-  for (var i = 0; i < imageLinks.length; i++) {
-    let imageLink = imageLinks[i];
-    imageLink.addEventListener('touchstart', touchStartImage, true);
-    imageLink.addEventListener('touchend', touchEndImage, true);
-  }
-</script>
 
 </html>
