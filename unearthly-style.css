@@ -1,9 +1,8 @@
 body {
     background-color: black;
-        color: white;
+    color: white;
     font-family: courier, serif;
 }
-
 
 #main {
   width: 100%;
@@ -15,11 +14,12 @@ h1 {
   color: white;
 }
 
-p {
-  background-color: black;
-}
 a {
   color: white;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 header {
@@ -49,19 +49,24 @@ nav ul li {
 }
 
 .image-link .image-tooltip {
-  display: inline-block;
   visibility: hidden;
+
+  display: inline-block;
+
+  position: relative;
+  z-index: 10000;
+
   width: 8rem;
   background-color: black;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
 
   /* Position the tooltip */
   margin: auto;
-  margin-top: -80px;
+  margin-top: -5rem;
 }
 
 .image-link img {
@@ -76,7 +81,6 @@ nav ul li {
 
 .png {
   cursor: url("curse.png"), auto;
-} 
 }
 
 @media only screen and (min-width: 500px) {
@@ -105,5 +109,6 @@ nav ul li {
     width: 15rem;
     height: 15rem;
     margin-bottom: 0rem;
+    margin: -1.5rem;
   }
 }
