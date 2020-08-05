@@ -68,3 +68,19 @@ body {
     float: none;
   }
 }
+
+div.text {
+     position: absolute;
+  left: 25%;
+  top: -10px;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        font-size: 35px;
+        font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;        color: black;
+        padding: 1rem;
+        background-color: lightcoral;
+        opacity: 0.9;
+        color: white;  
+    }
+
