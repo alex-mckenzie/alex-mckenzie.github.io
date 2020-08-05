@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+/*    font-family: courier, serif;*/
+}
+
+@font-face {
+    font-family: '1942_report1942_report';
+    src: url('1942-webfont.woff2') format('woff2'),
+         url('1942-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+                 
+h1 {
+/*    background-color: black;*/
+    color: white;
+}
+                 
+p {
+/*    background-color: black;*/
+    color: white;
+}
+
+div {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 25px;
+}
+
+    
+.png {
+  cursor: url("curse.png"), auto;
+}
+
+.tab { text-indent:40px }
+
+
