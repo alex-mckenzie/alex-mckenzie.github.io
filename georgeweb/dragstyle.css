@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+    html {
+    font-family: sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 17px; color: black; text-decoration: none;    }
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 100%;
+        text-align: justify;
+
+}
+
+.column2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 100%;
+        text-align: justify;
+
+}
+
+.scrollbox{
+    
+    height:25.5rem;width:100%;border:1px solid #ccc;overflow:auto; padding:10px
+}
+
+.payp{
+    
+    height:5rem;width:100%;overflow:auto; padding:20px; text-align: center;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+h1 {
+        padding: 10px
+    }
+    
+    a {
+    color: black;
+    text-decoration: none; 
+    display: block;     
+        
+        
+}
+    
+    body {
+    background:#ECE3F0;
+    }
