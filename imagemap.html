@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML ImageMap resizing example</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="iFrame message passing test">
+	<meta name="viewport" content="width=device-width"></head>
+	<style type="text/css">
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+    
+}
+
+	</style>
+<body>
+	<p>
+		<img name="beach" src="images/beach.jpg" class="center" usemap="#m_usaMap" border="0" width="75%" >
+	</p>
+
+	<map name="m_usaMap">
+<area shape="poly" coords="800,617,794,699,761,695,786,736,816,776,826,726,841,783,848,721,895,734,859,634,928,631,822,595,811,614,816,609" href="http://google.com">
+        
+    </map>
+    
+    
+	<!--[if lte IE 8]>
+		<script type="text/javascript" src="../js/ie8.polyfil.min.js"></script>
+	<![endif]-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/imageMapResizer.min.js"></script>
+	<script type="text/javascript">
+
+		$('map').imageMapResize();
+
+	</script>
+    
+    </body></html>
