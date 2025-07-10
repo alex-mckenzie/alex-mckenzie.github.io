@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang='en-us'>
+
+<head>
+  <meta charset='utf-8'>
+  <title>Alex McKenzie</title>
+
+  <link rel="stylesheet" href="alex-style.css" type="text/css" media="screen">
+
+  <style>
+    html {
+      background: url(images/invert__copy.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin: 0;
+    }
+
+    #gif {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width:500px; /* adjust as needed */
+      z-index: 9999;
+    }
+
+    .menu a {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+ <!--heading-->
+<div style="width: 100%; overflow: hidden;">
+<div style="text-align:left; width:500px; float: left">
+<ul class="menu"><a href="index.html">alex mckenzie</a></ul></div>
+    <div style="text-align:left; padding-left:30%; width:500px">
+<!--
+<ul class="menu"> 
+    <li><a href="about.html">about</a></li>
+    <li><a href="releases.html">releases</a></li>
+    <li><a href="live.html">live</a></li>
+    <li><a href="images.html">images</a></li>
+    <li><a href="contact.html">contact</a></li>
+</ul>
+-->
+</div></div>
+  <!-- Hidden GIF -->
+  <a href="wrong.html" id="gif-link">
+  <img id="gif" src="images/INSECT4567.gif" alt="spider">
+</a>
+
+  <!-- Script -->
+  <script>
+    const gif = document.getElementById('gif');
+    const alexLink = document.getElementById('alex-link');
+
+    alexLink.addEventListener('click', function () {
+      gif.style.display = 'block';
+
+      // Hide after 5 seconds (5000 milliseconds)
+      setTimeout(() => {
+        gif.style.display = 'none';
+      }, 3600);
+    });
+  </script>
+
+</body>
+
+</html>
