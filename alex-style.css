@@ -21,6 +21,12 @@ a.white {
 
 color: white;}
 
+        li {
+    float: left;
+    padding-right: 60px;
+}   
+
+
 /*
         .menu {
     padding-top: 20px;
@@ -32,7 +38,3 @@ color: white;}
         
 }
 */
-        li {
-    float: left;
-    padding-right: 60px;
-}   
